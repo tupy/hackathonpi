@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+ 
+<AnchorPane id="AnchorPane" blendMode="HARD_LIGHT" cache="false" focusTraversable="false" opacity="0.79" prefHeight="486.0" prefWidth="640.0" snapToPixel="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="hackathonpi.SampleController">
+  <children>
+    <ImageView fitHeight="287.25" fitWidth="383.0" layoutX="126.0" layoutY="69.0" opacity="0.98" pickOnBounds="true" preserveRatio="true" />
+    <Label alignment="CENTER" layoutX="87.0" layoutY="411.0" prefHeight="38.0" prefWidth="467.0" text="Bem-vindo ao HackthonPI" textAlignment="CENTER" wrapText="false">
+      <effect>
+        <Reflection bottomOpacity="0.1349206349206349" />
+      </effect>
+      <font>
+        <Font size="30.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
