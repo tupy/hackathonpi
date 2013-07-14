@@ -15,10 +15,15 @@ public class SampleController implements Initializable {
     private Label name;
     
     @FXML
+    ImageView imgSource;  
+
+    @FXML
     ImageView imgFace;  
 
-    @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
-    }    
+    	        
+    	FaceScan faceScan = new FaceScan(this.imgSource, this.imgFace, this.name);
+	    faceScan.start();
+    }   
+    
 }

@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>hackathonpi</groupId>
+  <artifactId>hackathonpi</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>The application developed on TDC 2013</description>
+  
+  
+    <!--
+    Install the JavaFX jar first:
+    mvn install:install-file -Dfile=jfxrt.jar -DgroupId=com.oracle -DartifactId=javafx -Dpackaging=jar -Dversion=2.2.3
+     -->
+    <dependencies>
+     <dependency>
+        <groupId>com.oracle</groupId>
+        <artifactId>javafx</artifactId>
+        <version>2.2.3</version>
+      </dependency>
+      
+    </dependencies>
+   
+   
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+  
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.0</version>
+        <configuration>
+          <source/>
+          <target/>
+        </configuration>
+      </plugin>
+      
+    <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-jar-plugin</artifactId>
+         <configuration>
+           <archive>
+             <manifest>
+               <mainClass>hackathonpi.HackathonPi</mainClass>
+               <packageName>hackathonpi</packageName>
+             </manifest>
+             <manifestEntries>
+               <mode>development</mode>
+               <url>${pom.url}</url>
+             </manifestEntries>
+           </archive>
+         </configuration>
+     </plugin>
+    </plugins>
+  </build>
+</project>
